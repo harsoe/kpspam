@@ -20,10 +20,6 @@ $pelanggan = Query("SELECT * FROM pelanggan");
       <th>No</th>
       <th>Nama</th>
       <th>No Pelanggan</th>
-      <th>Alamat</th>
-      <th>Rt</th>
-      <th>Rw</th>
-      <th>Gol</th>
       <th>Aksi</th>
 
     </tr>
@@ -35,13 +31,8 @@ $pelanggan = Query("SELECT * FROM pelanggan");
         <td><?= $i++; ?></td>
         <td><?= $p['nama']; ?></td>
         <td><?= $p['nopel']; ?></td>
-        <td><?= $p['alamat']; ?></td>
-        <td><?= $p['rt']; ?></td>
-        <td><?= $p['rw']; ?></td>
-        <td><?= $p['gol']; ?></td>
         <td>
-          <a href="">ubah</a> |
-          <a href="">hapus</a>
+          <a href="detail.php?id=<?= $p['id']; ?>">Lihat Detail</Details></a>
         </td>
       </tr>
     <?php endforeach; ?>
