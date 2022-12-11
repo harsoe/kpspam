@@ -1,3 +1,18 @@
+<?php
+
+require 'functions.php';
+
+// cek apakah tombol tambah sudah ditekan
+if (isset($_POST['tambah'])) {
+  if (tambah($_POST) > 0) {
+    echo "Data berhasil ditambahkan!";
+  } else {
+    echo "Data Gagal ditambahkan!";
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,13 +29,54 @@
     <ul>
       <li>
         <label>
-          Username
-          <input type="text" name="username">
+          Nama :
+          <input type="text" name="Nama" autofocus required>
         </label>
-
-
-
       </li>
+    </ul>
+
+    <ul>
+      <li>
+        <label>
+          No Pelanggan :
+          <input type="text" name="nopel">
+        </label>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label>
+          Alamat :
+          <input type="text" name="alamat">
+        </label>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label>
+          RT :
+          <input type="text" name="rt">
+        </label>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label>
+          RW :
+          <input type="text" name="rw">
+        </label>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label>
+          Golongan :
+          <input type="text" name="gol">
+        </label>
+      </li>
+    </ul>
+    <ul>
+      <button type="submit" name="tambah">Tambah Data </button>
     </ul>
 
 
