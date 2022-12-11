@@ -28,7 +28,7 @@ $p = Query("SELECT * FROM pelanggan WHERE id=$id");
     <li>rw :<?= $p['rw'];  ?></li>
     <li>golongan : <?= $p['gol'];  ?></li>
     <li><a href="">Ubah</a></li>
-    <li><a href="pelanggan.php">Kembali ke daftar Pelanggan</a></li>
+    <li><a href="pelanggan2.php">Kembali ke daftar Pelanggan</a></li>
   </ul>
 </body>
 

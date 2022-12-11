@@ -30,7 +30,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           Nama :
-          <input type="text" name="Nama" autofocus required>
+          <input type="text" name="nama" autofocus required>
         </label>
       </li>
     </ul>
@@ -39,7 +39,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           No Pelanggan :
-          <input type="text" name="nopel">
+          <input type="text" name="nopel" required>
         </label>
       </li>
     </ul>
@@ -47,7 +47,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           Alamat :
-          <input type="text" name="alamat">
+          <input type="text" name="alamat" required>
         </label>
       </li>
     </ul>
@@ -55,7 +55,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           RT :
-          <input type="text" name="rt">
+          <input type="text" name="rt" required>
         </label>
       </li>
     </ul>
@@ -63,7 +63,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           RW :
-          <input type="text" name="rw">
+          <input type="text" name="rw" required>
         </label>
       </li>
     </ul>
@@ -71,7 +71,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           Golongan :
-          <input type="text" name="gol">
+          <input type="text" name="gol" required>
         </label>
       </li>
     </ul>

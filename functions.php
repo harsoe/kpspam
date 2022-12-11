@@ -33,7 +33,7 @@ function tambah($data)
   $gol = $data['gol'];
 
   $query = "INSERT INTO pelanggan VALUES 
-    ('','$nama','$nopel','$alamat','$rt','$rw','$gol')";
+    (null,'$nama','$nopel','$alamat','$rt','$rw','$gol')";
 
 
   mysqli_query($conn, $query);
