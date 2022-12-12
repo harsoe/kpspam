@@ -27,8 +27,8 @@ $p = Query("SELECT * FROM pelanggan WHERE id=$id");
     <li>rt :<?= $p['rt'];  ?></li>
     <li>rw :<?= $p['rw'];  ?></li>
     <li>golongan : <?= $p['gol'];  ?></li>
-    <li><a href="">Ubah</a></li>
-    <li><a href="pelanggan2.php">Kembali ke daftar Pelanggan</a></li>
+    <li><a href="">Ubah</a> | <a href="hapus.php?id=<?= $p['id']; ?>" onclick=" return confirm ('Apakah Anda yakin ?');">Hapus</a></li>
+    <li><a href="index.php">Kembali ke daftar Pelanggan</a></li>
   </ul>
 </body>
 

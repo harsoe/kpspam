@@ -36,7 +36,25 @@ function tambah($data)
     (null,'$nama','$nopel','$alamat','$rt','$rw','$gol')";
 
 
-  mysqli_query($conn, $query);
+  mysqli_query($conn, $query) or die(mysqli_error($conn));
   echo mysqli_error($conn);
+  return mysqli_affected_rows($conn);
+}
+
+function hapus($id)
+{
+  $conn = koneksi();
+  //$nama = $data['nama'];
+  //$nopel = $data['nopel'];
+  //$alamat = $data['alamat'];
+  //$rt = $data['rt'];
+  //$rw = $data['rw'];
+  //$gol = $data['gol'];
+
+  $query = "DELETE FROM pelanggan WHERE id= $id";
+
+
+  mysqli_query($conn, $query) or die(mysqli_error($conn));
+  //echo mysqli_error($conn);
   return mysqli_affected_rows($conn);
 }
